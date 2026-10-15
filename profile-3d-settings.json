@@ -1,0 +1,56 @@
+[
+  {
+    "fileName": "skyline-executive.svg",
+    "backgroundColor": "#060D1B",
+    "foregroundColor": "#EEF4FF",
+    "strongColor": "#F5C451",
+    "weakColor": "#9DB2D1",
+    "radarColor": "#7DD3FC",
+    "growingAnimation": true,
+    "type": "normal",
+    "contribColors": [
+      "#0E1C38",
+      "#1E3A8A",
+      "#2563EB",
+      "#3B82F6",
+      "#7DD3FC"
+    ]
+  },
+  {
+    "fileName": "skyline-aurora.svg",
+    "backgroundColor": "#04051A",
+    "foregroundColor": "#F3F0FF",
+    "strongColor": "#F472B6",
+    "weakColor": "#ABA7DA",
+    "radarColor": "#22D3EE",
+    "growingAnimation": true,
+    "type": "rainbow",
+    "saturation": "70%",
+    "contribLightness": [
+      "14%",
+      "38%",
+      "48%",
+      "56%",
+      "66%"
+    ],
+    "duration": "12s",
+    "hueRatio": -6
+  },
+  {
+    "fileName": "skyline-neon.svg",
+    "backgroundColor": "#0A0016",
+    "foregroundColor": "#FFF2FD",
+    "strongColor": "#FFD319",
+    "weakColor": "#D3B3EE",
+    "radarColor": "#00E5FF",
+    "growingAnimation": true,
+    "type": "normal",
+    "contribColors": [
+      "#1D0038",
+      "#5B1A8C",
+      "#A21CAF",
+      "#FF2BD6",
+      "#00E5FF"
+    ]
+  }
+]

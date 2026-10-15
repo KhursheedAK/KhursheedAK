@@ -1,0 +1,33 @@
+name: Switch Theme
+
+on:
+  workflow_dispatch:
+    inputs:
+      theme:
+        description: "Theme to show on the profile"
+        required: true
+        default: executive
+        type: choice
+        options:
+          - executive
+          - aurora
+          - neon
+
+permissions:
+  contents: write
+
+jobs:
+  switch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Apply theme
+        run: cp "themes/${{ inputs.theme }}.md" README.md
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          if git commit -m "Switch profile theme to ${{ inputs.theme }}"; then
+            git push
+          fi
