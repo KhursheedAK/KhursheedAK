@@ -1,0 +1,34 @@
+name: Profile Stats Cards
+
+on:
+  schedule:
+    - cron: "30 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch github-readme-stats (official repo)
+        run: |
+          git clone --depth 1 https://github.com/anuraghazra/github-readme-stats "$RUNNER_TEMP/grs"
+          cd "$RUNNER_TEMP/grs" && npm ci --ignore-scripts
+      - name: Render cards
+        env:
+          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/render-cards.mjs "$RUNNER_TEMP/grs" "${{ github.repository_owner }}" profile-stats
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add profile-stats
+          if git commit -m "Update profile stats cards"; then
+            git push
+          fi

@@ -44,7 +44,7 @@
 
 <img src="https://raw.githubusercontent.com/KhursheedAK/KhursheedAK/main/assets/neon/title-activity.svg" width="100%" alt="04 Commit Skyline" />
 <img src="https://raw.githubusercontent.com/KhursheedAK/KhursheedAK/main/profile-3d-contrib/skyline-neon.svg" width="100%" alt="3D contribution skyline" />
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=KhursheedAK&show_icons=true&rank_icon=github&bg_color=14002A&title_color=00E5FF&icon_color=FF2BD6&text_color=FFF2FD&hide_border=true&border_radius=20" alt="GitHub stats" />&nbsp;<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KhursheedAK&layout=compact&langs_count=6&hide=c,c%2B%2B&bg_color=14002A&title_color=00E5FF&icon_color=FF2BD6&text_color=FFF2FD&hide_border=true&border_radius=20" alt="Top languages" />
+<img height="175" src="https://raw.githubusercontent.com/KhursheedAK/KhursheedAK/main/profile-stats/stats.svg" alt="GitHub stats" />&nbsp;<img height="175" src="https://raw.githubusercontent.com/KhursheedAK/KhursheedAK/main/profile-stats/top-langs.svg" alt="Top languages" />
 
 <br /><br />
 
