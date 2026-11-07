@@ -22,7 +22,7 @@ jobs:
           cd "$RUNNER_TEMP/grs" && npm ci --ignore-scripts
       - name: Render cards
         env:
-          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+          PAT_1: ${{ secrets.STATS_PAT }}
         run: node scripts/render-cards.mjs "$RUNNER_TEMP/grs" "${{ github.repository_owner }}" profile-stats
       - name: Commit & Push
         run: |
